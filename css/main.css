@@ -4,7 +4,7 @@
 :root {
   --main-color: #5758e0;
   --socndary-color: #55b4d4;
-  --color-main :#fff;
+  --color-main: #fff;
   --text-color: #999999;
   --color-card: #191919;
   --section-color: #111111;
@@ -176,6 +176,7 @@ ul {
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  height: calc(100vh - 50px);
 }
 
 
@@ -261,7 +262,7 @@ ul {
 /* End Landing */
 /* Start Skill */
 .skill {
-  background-color: #111111;
+  background-color: var(--section-color);
   padding: 70px 0;
 }
 
@@ -362,7 +363,7 @@ ul {
 .about .container .row .col h2 {
   font-size: 40px;
   font-weight: 600;
-  margin: 15px 0;
+  margin: 0 0 15px 0;
   color: var(--color-main);
 }
 
@@ -391,7 +392,7 @@ ul {
 /* Start prof */
 .prof {
   padding: 100px 0;
-  background-color: #111111;
+  background-color: var(--section-color);
 }
 
 .prof .container .row {
@@ -415,7 +416,7 @@ ul {
 .prof .container .row .col h2 {
   font-size: 40px;
   font-weight: 600;
-  margin: 15px 0;
+  margin: 0 0 15px 0;
   color: var(--color-main);
 }
 
@@ -519,7 +520,7 @@ ul {
 .features .container .card h4 {
   font-size: 20px;
   font-weight: 400;
-  color: #999999;
+  color: Var(--text-color);
 }
 
 .features .container .card i {
@@ -879,7 +880,7 @@ ul {
 /* Start information */
 .information {
   padding: 100px 0;
-  background-color: #111111;
+  background-color: var(--section-color);
 }
 
 .information .container .info-card {
