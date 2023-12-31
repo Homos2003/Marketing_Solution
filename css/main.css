@@ -507,13 +507,83 @@ ul {
 }
 
 .features .container .card {
+  margin: 30px 0;
+}
+
+.features .container .card .head {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background-color: var(--section-color);
   cursor: pointer;
-  background-color: var(--color-card);
   padding: 20px;
-  margin-bottom: 20px;
+}
+
+.head::after {
+  content: "\002b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  background: linear-gradient(to left, var(--socndary-color), var(--main-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.active::after {
+  content: "\2212";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  background: linear-gradient(to left, var(--socndary-color), var(--main-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+
+.features .container .card .dec {
+  color: var(--text-color);
+  font-size: 17px;
+  font-weight: 600;
+  background-color: var(--section-color);
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.features .container .card .dec p {
+  padding: 20px;
+}
+
+.features .container .card .divir {
+  width: 70%;
+  height: 3px;
+  background-color: var(--main-color);
+  margin: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 
@@ -521,13 +591,6 @@ ul {
   font-size: 20px;
   font-weight: 400;
   color: Var(--text-color);
-}
-
-.features .container .card i {
-  font-size: 25px;
-  background: linear-gradient(to left, var(--socndary-color), var(--main-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* End Features */
